@@ -22,8 +22,9 @@ project(':json-manipulation') {
 
     dependencies {
         implementation("com.google.code.gson:gson:2.8.5") {
-            because 'Gson is threadsafe and its builder pattern is supperior to all others.'
+            because 'Gson is threadsafe and its builder pattern is superior to all others.'
         }
+        testCompile 'junit:junit:4.11'
     }
 }
 
@@ -39,5 +40,10 @@ project(':mystery-duplicates') {
     }
 
     dependencies {
+        testCompile 'junit:junit:4.11'
     }
+}
+
+dependencies {
+    testCompile "junit:junit:4.11"
 }
